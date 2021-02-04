@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Dominio\\ProvaTecnica.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Dominio\\ProvaTecnica.Dominio.csproj",
+        "projectName": "ProvaTecnica.Dominio",
+        "projectPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Dominio\\ProvaTecnica.Dominio.csproj",
+        "packagesPath": "C:\\Users\\dafne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dafne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Repositorio\\ProvaTecnica.Repositorio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Repositorio\\ProvaTecnica.Repositorio.csproj",
+        "projectName": "ProvaTecnica.Repositorio",
+        "projectPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Repositorio\\ProvaTecnica.Repositorio.csproj",
+        "packagesPath": "C:\\Users\\dafne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Repositorio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dafne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Dominio\\ProvaTecnica.Dominio.csproj": {
+                "projectPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Dominio\\ProvaTecnica.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI.csproj",
+        "projectName": "ProvaTecnica.WebAPI",
+        "projectPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\dafne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dafne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Dominio\\ProvaTecnica.Dominio.csproj": {
+                "projectPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Dominio\\ProvaTecnica.Dominio.csproj"
+              },
+              "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Repositorio\\ProvaTecnica.Repositorio.csproj": {
+                "projectPath": "C:\\Users\\dafne\\OneDrive\\Documentos\\Prova Técnica - SYS10\\ProvaTecnica.WebAPI\\ProvaTecnica.Repositorio\\ProvaTecnica.Repositorio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

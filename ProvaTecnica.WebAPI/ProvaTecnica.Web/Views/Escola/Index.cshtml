@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ProvaTecnica.Web.Models.Escola>
+
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-9">
+        <h2 class="text-info">Escolas</h2>
+    </div>
+    <div class="col-3">
+        <a asp-action="Create" class="btn btn-info form-control text-white">Nova Escola</a>
+    </div>
+
+
+    <div class="col-12 border p-3 mt-3">
+        <form method="post">
+            <table class="table table-striped border">
+                <tr class="table-secondary">
+                    <th>
+                        @Html.DisplayName("Escola")
+                    </th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NomeEscola)
+                        </td>
+                        <td>
+                            <div class="form-group row">
+                                <div class="col-2">
+                                    <a asp-action="Edit" asp-route-id="@item.IdEscola" class="btn btn-success form-control text-white">Editar</a>
+                                </div>
+                                <div class="col-3">
+                                    <a asp-action="Details" asp-route-id="@item.IdEscola" class="btn btn-primary form-control text-white">Detalhes</a>
+                                </div>
+                                <div class="col-2">
+                                    <a asp-action="Delete" asp-route-id="@item.IdEscola" class="btn btn-danger form-control text-white">Excluir</a>
+                                </div>
+                             </div>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </form>
+    </div>
+</div>

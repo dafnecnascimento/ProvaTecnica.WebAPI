@@ -1,0 +1,47 @@
+﻿@model ProvaTecnica.Web.Models.Turma
+
+
+<br />
+<h2 class="text-info">Detalhes Turma</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <div class="form-group row">
+            <div class="col-4">
+                <label>Turma</label>
+            </div>
+            <div class="col-6">
+                @Html.DisplayFor(model => model.NomeTurma)
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label>Escola</label>
+            </div>
+            <div class="col-6">
+                @Html.DisplayFor(model => model.Escola.NomeEscola)
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label>Média de Notas</label>
+            </div>
+            <div class="col-6">
+                @Html.DisplayFor(model => model.MediaNotas)
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <a asp-action="Index" class="btn btn-success form-control">Retornar</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

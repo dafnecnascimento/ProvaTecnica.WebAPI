@@ -1,0 +1,58 @@
+﻿@model ProvaTecnica.Web.Models.Aluno
+
+<br />
+<h2 class="text-info">Aluno</h2>
+<br />
+
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+            <div class="form-group">
+                <span asp-validation-for="IdAluno" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label>Nome</label>
+            </div>
+            <div class="col-6">
+                <input asp-for="NomeAluno" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label>Nota</label>
+            </div>
+            <div class="col-6">
+                <input asp-for="NotaAluno" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label>Identificação Turma</label>
+            </div>
+            <div class="col-6">
+                <input asp-for="IdTurma" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-4">
+                <input type="submit" value="Editar" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-action="Index" class="btn btn-success form-control">Retornar</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+           
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

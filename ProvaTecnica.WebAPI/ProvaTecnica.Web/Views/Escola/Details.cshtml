@@ -1,0 +1,30 @@
+﻿@model ProvaTecnica.Web.Models.Escola
+
+
+<br />
+<h2 class="text-info">Detalhes Aluno</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <div class="form-group row">
+            <div class="col-4">
+                <label>Escola</label>
+            </div>
+            <div class="col-6">
+                @Html.DisplayFor(model => model.NomeEscola)
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <a asp-action="Index" class="btn btn-success form-control">Retornar</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
